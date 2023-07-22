@@ -1,232 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 1em;
-    }
-    h1 {
-      font-size: 1.8em;
-      margin-bottom: 1em;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin-bottom: 0.5em;
-    }
-    p {
-      margin-bottom: 1em;
-    }
-    ul {
-      margin-bottom: 1em;
-    }
-    li {
-      margin-bottom: 0.5em;
-    }
-  </style>
+  <title>YOUR NAME Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 <body>
-  <h1>Resume</h1>
-  <section>
-    <h2>Personal Information</h2>
-    <p>RUBEL CHANDRA DAS</p>
-    <p>Albuquerque, NM | rubeldas296@unm.edu | +1(505) 219-8800</p>
-    <p>
-      <a href="mailto:rubeldas296@gmail.com">Gmail</a>
-      <a href="https://www.linkedin.com/in/rubel-chandra-das-993b2899/">Linkedin</a>
-      <a href="https://scholar.google.com/citations?user=ZKNAUToAAAAJ&hl=en">Google Scholar</a>
-      <a href="https://github.com/RUBEL-CHANDRA-DAS">Github</a>
-    </p>
-  </section>
-  
-  <section>
-    <h2>Core Competencies</h2>
-    <ul>
-      <li>
-        Developed, verified, and validated a high-fidelity massively parallel CFD solver (in C and MPI, 30K lines) from scratch to model and simulate complex aerodynamic phenomena.
-      </li>
-      <li>
-        Proficient in CFD software tools (COMSOL Multiphysics, STAR-CCM+, ANSYS Fluent).
-      </li>
-      <li>
-        Designed, verified, and validated thermal devices achieving less than 5% deviation from manufacturers' claimed values; performed data quality control, analyzed, prepared reports.
-      </li>
-      <li>
-        Experienced in design of experiments, data collection, statistical analysis, and visualization.
-      </li>
-      <li>
-        Acquired a thorough understanding of heat and fluid flow and their practical applications.
-      </li>
-      <li>
-        Have factory experience; knowledgeable in supply chains and factory production processes.
-      </li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Education</h2>
-    <p><strong>Doctor of Philosophy (Ph.D.)</strong> in Mechanical Engineering</p>
-    <p>The University of New Mexico (UNM), Albuquerque, NM. <br> Anticipated: 10/2023</p>
-  
-    <p><strong>Master of Science (MSc)</strong> in Mechanical Engineering</p>
-    <p>Bangladesh University of Engineering and Technology (BUET), Dhaka, BD. <br> Completed: 8/2017</p>
-  
-    <p><strong>Bachelor of Science (BSc)</strong> in Mechanical Engineering</p>
-    <p>Bangladesh University of Engineering and Technology (BUET), Dhaka, BD. <br> Completed: 9/2015</p>
-  </section>
-  
-  <section>
-    <h2>Professional Experience</h2>
-    <ul>
-      <li>
-        <strong>Research Assistant</strong>, Department of Mechanical Engineering, UNM. <br> 8/2017 to 10/2023
-        <ul>
-          <li>
-            Developed a massively parallel high-fidelity CFD solver with C and MPI from scratch (30K lines), with several LES turbulence models for Wind Farm Simulation and other fluid simulations.
-          </li>
-          <li>
-            Wind Farm Optimization and Analysis of Complex Wake Structures, PhD thesis.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <strong>Research Assistant</strong>, Center for Advanced Research Computing, UNM. <br> 1/2018 to 7/2018
-        <ul>
-          <li>
-            Supported the high-performance computing environments at CARC.
-          </li>
-          <li>
-            Troubleshot job scheduling and resolved errors in PBS scripts.
-          </li>
-          <li>
-            Conducted benchmarking for compilers and tested the scalability of open-source codes.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <strong>Teaching Assistant</strong>, Department of Mechanical Engineering, UNM. <br> 8/2017 to 12/2021
-        <ul>
-          <li>
-            Taught classes and graded papers for Wind Energy Systems, Aerospace Structures and Materials, Dynamic System Analysis, and Energy Storage and Conversion Systems courses.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <strong>Summer Intern</strong>, Avery Dennison Bangladesh Limited, Dhaka. <br> 6/2015 to 8/2015
-        <ul>
-          <li>
-            Conducted a comprehensive analysis of manufacturing and distribution procedures for various products and proposed improved alternatives.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>
-        Simulation Software:
-        <ul>
-          <li>
-            COMSOL Multiphysics: Evaluated different turbulence models, validated the best model, and investigated the effects of Reynolds and Prandtl numbers on the momentum and energy fields in a turbulent thermal boundary layer using multi-scale analysis. MSc thesis.
-          </li>
-          <li>
-            STAR-CCM+: Analyzed laminar and turbulent boundary layers utilizing various turbulence models. Grad. course project.
-          </li>
-          <li>
-            ANSYS Fluent: Conducted validation and verification procedures to confirm the accuracy of fluid flow simulation results. Grad. course project.
-          </li>
-        </ul>
-      </li>
-      <li>
-        Programming Languages:
-        <ul>
-          <li>
-            C/C++: Wrote a CFD solver and several other codes to analyze fluid dynamics.
-          </li>
-          <li>
-            Fortran: Wrote FEM codes to model fluid motion and added a turbine model in Incompact3D.
-          </li>
-          <li>
-            Python: Wrote codes for visualization and analysis of large CFD data sets.
-          </li>
-          <li>
-            MPI: Parallelized the CFD code that runs on hundreds of cores.
-          </li>
-          <li>
-            MATLAB: Wrote machine learning codes and post-processed large CFD data sets.
-          </li>
-        </ul>
-      </li>
-      <li>
-        AutoCAD - Designed 2D and 3D devices;
-      </li>
-      <li>
-        Paraview, Intelligent Light FieldView, Tecplot, Gnuplot, xyExtract, Getdata - Performed Visualization and Analysis of CFD data sets;
-      </li>
-      <li>
-        Linux and Windows - Experienced in both OS systems;
-      </li>
-      <li>
-        Git and Github - Worked in collaborative projects;
-      </li>
-      <li>
-        HTML - Designed websites;
-      </li>
-      <li>
-        MS Office - Adept using all features (e.g., MS Excel).
-      </li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Publications</h2>
-    <ul>
-      <li>Das, R. and Shen, Y.-L. (2023). Analysis of wind farms under different yaw angles and wind speeds, Energies.</li>
-      <li>Das, R. and Lee, S. (2019). Numerical Perspectives on Wind Turbine Wakes. APS Meeting.</li>
-      <li>Talaat, K., Das, R., Romero, B., Cakez, C., Anderoglu, O., Lee, S., Lee, Y., Ban, H., Woloshun, K., Kim, S. J., et al. (2019). Development of a numerical framework to model flow accelerated corrosion in a lead loop. NURETH Meeting.</li>
-      <li>Das, R. (2017). Multi-scale analysis of turbulent thermal boundary layer with zero pressure gradient, MSc thesis.</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        Design and construction of portable experimental setup for measuring the thermal conductivity of locally available insulating materials, BSc thesis.
-        <ul>
-          <li>Built accurate thermal conductivity testing setup achieving less than 5% deviation from manufacturers' claimed values using Brass disc, thermocouple, brass steam chamber, and stainless steel steam generator.</li>
-        </ul>
-      </li>
-      <li>
-        Automatic color-based product sorting machine, Undergraduate project.
-        <ul>
-          <li>Developed automated color sorting machine using RGB and IR sensors, conveyor belts, servo motor, and microcontroller.</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Relevant Courses</h2>
-    <p>Advanced Convection Heat Transfer, Conduction and Radiation Heat Transfer, Convection, Boiling, Condensation and Mass Transfer, Advanced Thermodynamics, Classical Thermodynamics, Computational Fluid Dynamics, Turbulent Flows, Fluid Mechanics, Mechanics of Viscous Fluid, Mechanics of Inviscid Compressible Fluid, Energy Storage & Conversion Systems, Machine Design, Machine Tools, Mechanics of Machinery, Fluid Machinery, Refrigeration and Building Mechanical Systems, Fluidics, Instrumentation and Measurement, Measurement and Quality Control, Electrical and Electronics Technology, V&V in Comp. Mech., Composite Materials, Computational Mechanics, Industrial Management, Production Processes, Advanced Numerical Analysis, Applied Engineering Mathematics, Machine Learning.</p>
-  </section>
-  
-  <section>
-    <h2>Leadership Roles</h2>
-    <ul>
-      <li>President of the Mechanical Engineering Graduate Association, UNM Chapter. - 2022-2023</li>
-      <li>President of the Bengal United Sports Club, UNM. - 2020-2021</li>
-      <li>Secretary of the Mechanical Engineering Graduate Association, UNM Chapter. - 2020-2022</li>
-    </ul>
-  </section>
-  
-  <section>
-    <h2>Additional Information</h2>
-    <p>Undergraduate Technical Scholarship (BUET), Trilingual.</p>
-    <p>References are available upon request.</p>
-  </section>
+  <header>
+    <nav class="topnav">
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+        <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div id="home" class="blurb">
+        <h1>Hi, I am RUBEL CHANDRA DAS!</h1>
+        <p>Welcome, thank you for visiting my website!</p>
+      </div>
+      <div id="about" class="blurb" style="display: none;">
+        <!-- Add content for the About section here -->
+        <h1>About Me</h1>
+        <p>
+          I'm a Ph.D. candidate in the Mechanical Engineering Department at the University of New Mexico (UNM), USA.
+          I have an M.Sc. and a B.Sc. degree from the Mechanical Engineering Department at the Bangladesh University
+          of Engineering and Technology, Bangladesh., in 2017 and 2015, respectively.
+        </p>
+      </div>
+
+      <!-- RESUME SECTION STARTS HERE -->
+      <div id="resume" class="blurb" style="display: none;">
+        <!-- Add an iframe to load the resume.html file -->
+        <iframe src="resume.html" style="width: 100%; border: none;" scrolling="no"></iframe>
+      </div>
+      <!-- RESUME SECTION ENDS HERE -->
+      
+      <div id="blog" class="blurb" style="display: none;">
+        <!-- Add content for the Blog section here -->
+      </div>
+    </div>
+  </header>
+  <footer>
+    <p><a href="mailto:rubeldas296@unm.edu">YOUREMAIL</a></p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      var sections = document.getElementsByClassName('blurb');
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+      }
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
 </body>
 </html>
