@@ -118,3 +118,16 @@ img {
   background-color: #FAF0DD; /* Replace #f2f2f2 with the desired background color */
   padding: 20px; /* Optional: Add padding to create some spacing around the content */
 }
+
+
+
+/* Add styles for the contact links container */
+.contact-links {
+  display: inline; /* Make the container inline */
+}
+
+/* Add styles for the contact links */
+.contact-links p {
+  display: inline; /* Make each link appear inline */
+  margin-right: 10px; /* Add some spacing between the links */
+}
