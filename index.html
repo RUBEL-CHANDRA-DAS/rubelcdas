@@ -4,22 +4,18 @@
   <title>YOUR NAME Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-  <style>
-    /* Add your existing styles here */
-    /*
-      body {
-      background-image: url('pictures/bg.jpg'); /* Replace 'background.jpg' with the path to your background image */
-      background-repeat: no-repeat;
-      background-size: cover; /* This property ensures the background image covers the entire body */
-      background-position: center center; /* Center the background image */
-      height: 100vh; /* Set the body height to fill the entire viewport */
-      margin: 0; /* Remove any default margin to avoid white space */
-      padding: 0; /* Remove any default padding to avoid white space */
-      font-family: Arial, sans-serif; /* Optional: Set the font family for the body */
-    }
-    */
-  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "\\(", right: "\\)", display: false },
+          { left: "\\[", right: "\\]", display: true },
+        ],
+        throwOnError: false,
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -46,56 +42,60 @@
         </p>
       </div>
 
-      
-
       <div id="resume" class="blurb" style="display: none;">
         <!-- Add content for the Resume section here -->
         <h2>Resume</h2>
         <div>
-          <script type="math/tex">
-            \documentclass{article}
-            \begin{document}
-            
-            \section{Personal Information}
-            Your Name
-            Your Address
-            Your Phone Number
+          <!-- LaTeX code goes here -->
+          <p>
+            \section{Personal Information} <br>
+            Your Name <br>
+            Your Address <br>
+            Your Phone Number <br>
             Your Email Address
-            
-            \section{Education}
+          </p>
+    
+          <p>
+            \section{Education} <br>
             \textbf{Ph.D. in Mechanical Engineering} <br>
             University of XYZ, Country <br>
-            Year - Year <br>
-            
+            Year - Year
+          </p>
+    
+          <p>
             \textbf{M.Sc. in Mechanical Engineering} <br>
             University of ABC, Country <br>
-            Year - Year <br>
-            
+            Year - Year
+          </p>
+    
+          <p>
             \textbf{B.Sc. in Mechanical Engineering} <br>
             University of PQR, Country <br>
-            Year - Year <br>
-            
-            \section{Skills}
-            - Skill 1
-            - Skill 2
+            Year - Year
+          </p>
+    
+          <p>
+            \section{Skills} <br>
+            - Skill 1 <br>
+            - Skill 2 <br>
             - Skill 3
-            
-            \section{Experience}
+          </p>
+    
+          <p>
+            \section{Experience} <br>
             \textbf{Job Title} <br>
             Company Name, Location <br>
-            Date - Date <br>
-            
-            \section{Publications}
-            - Publication 1
-            - Publication 2
+            Date - Date
+          </p>
+    
+          <p>
+            \section{Publications} <br>
+            - Publication 1 <br>
+            - Publication 2 <br>
             - Publication 3
-            
-            \end{document}
-          </script>
+          </p>
         </div>
-      </div>
-
-      
+      </div>      
       
       <div id="blog" class="blurb" style="display: none;">
         <!-- Add content for the Blog section here -->
