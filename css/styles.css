@@ -10,18 +10,29 @@ body {
   font-family: Arial, sans-serif; /* Optional: Set the font family for the body */
 }
 
-.topnav {
+header {
   text-align: center; /* Center the navigation links */
   margin-top: 1in; /* Add a 1-inch margin at the top */
 }
 
-.topnav a {
-  text-decoration: none;
-  color: #999;
+header .topnav ul {
+  padding: 0;
+  list-style: none;
+  font-weight: bold;
+  display: inline-block; /* Set the display to inline-block to center the navigation links */
+}
+
+header .topnav li {
+  display: inline;
   margin-right: 20px;
 }
 
-.topnav a:hover {
+header .topnav a {
+  text-decoration: none;
+  color: #999;
+}
+
+header .topnav a:hover {
   text-decoration: underline;
 }
 
