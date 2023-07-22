@@ -4,8 +4,11 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px; /* Adjust the width as per your preference */
-      margin: 0 auto; /* Center the content horizontally */
+    }
+    .container {
+      width: 800px; /* Adjust the width as per your preference */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 1em; /* Optional padding for the container */
     }
     h1 {
       font-size: 1.8em;
@@ -25,103 +28,105 @@
   </style>
 </head>
 <body>
-  <!-- Your resume content goes here -->
-  <p>RUBEL CHANDRA DAS</p>
-  <p>Albuquerque, NM | rubeldas296@unm.edu | +1(505) 219-8800</p>
-  <p><a href="mailto:rubeldas296@gmail.com">Gmail</a></p>
-  <p><a href="https://www.linkedin.com/in/rubel-chandra-das-993b2899/">Linkedin</a></p>
-  <p><a href="https://scholar.google.com/citations?user=ZKNAUToAAAAJ&hl=en">Google Scholar</a></p>
-  <p><a href="https://github.com/RUBEL-CHANDRA-DAS">Github</a></p>
-
-  <h2>Core Competencies</h2>
-  <ul>
-    <li>Developed, verified, and validated a high-fidelity massively parallel CFD solver (in C and MPI, 30K lines) from scratch to model and simulate complex aerodynamic phenomena.</li>
-    <li>Proficient in CFD software tools (COMSOL Multiphysics, STAR-CCM+, ANSYS Fluent).</li>
-    <li>Designed, verified, and validated thermal devices achieving less than 5% deviation from manufacturers' claimed values; performed data quality control, analyzed, prepared reports.</li>
-    <li>Experienced in design of experiments, data collection, statistical analysis, and visualization.</li>
-    <li>Acquired a thorough understanding of heat and fluid flow and their practical applications.</li>
-    <li>Have factory experience; knowledgeable in supply chains and factory production processes.</li>
-  </ul>
-
-  <h2>Education</h2>
-  <p><strong>Doctor of Philosophy (Ph.D.) in Mechanical Engineering</strong></p>
-  <p>Anticipated: 10/2023</p>
-  <p>The University of New Mexico (UNM), Albuquerque, NM.</p>
-
-  <p><strong>Master of Science (MSc) in Mechanical Engineering</strong></p>
-  <p>Completed: 8/2017</p>
-  <p>Bangladesh University of Engineering and Technology (BUET), Dhaka, BD.</p>
-
-  <p><strong>Bachelor of Science (BSc) in Mechanical Engineering</strong></p>
-  <p>Completed: 9/2015</p>
-  <p>Bangladesh University of Engineering and Technology (BUET), Dhaka, BD.</p>
-
-  <h2>Professional Experience</h2>
-  <ul>
-    <li><strong>Research Assistant</strong>, Department of Mechanical Engineering, UNM. (8/2017 to 10/2023)</li>
-    <p>Developed a massively parallel high-fidelity CFD solver with C and MPI from scratch (30K lines), with several LES turbulence models for Wind Farm Simulation and other fluid simulations.</p>
-    <p>Wind Farm Optimization and Analysis of Complex Wake Structures, PhD thesis.</p>
-    <p>Research details go here...</p>
-
-    <li><strong>Research Assistant</strong>, Center for Advanced Research Computing, UNM. (1/2018 to 7/2018)</li>
-    <p>Supported the high-performance computing environments at CARC.</p>
-    <p>Troubleshot job scheduling and resolved errors in PBS scripts.</p>
-    <p>Conducted benchmarking for compilers and tested the scalability of open-source codes.</p>
-
-    <li><strong>Teaching Assistant</strong>, Department of Mechanical Engineering, UNM. (8/2017 to 12/2021)</li>
-    <p>Taught classes and graded papers for various courses.</p>
-    <p>Teaching details go here...</p>
-
-    <li><strong>Summer Intern</strong>, Avery Dennison Bangladesh Limited, Dhaka. (6/2015 to 8/2015)</li>
-    <p>Conducted a comprehensive analysis of manufacturing and distribution procedures for various products and proposed improved alternatives.</p>
-  </ul>
-
-  <h2>Technical Skills</h2>
-  <ul>
-    <li>Simulation Software:</li>
-    <p>COMSOL Multiphysics: Evaluated different turbulence models, validated the best model, and investigated the effects of Reynolds and Prandtl numbers on the momentum and energy fields in a turbulent thermal boundary layer using multi-scale analysis. MSc thesis.</p>
-    <p>STAR-CCM+: Analyzed laminar and turbulent boundary layers utilizing various turbulence models. Grad. course project.</p>
-    <p>ANSYS Fluent: Conducted validation and verification procedures to confirm the accuracy of fluid flow simulation results. Grad. course project.</p>
-
-    <li>Programming Languages:</li>
-    <p>C/C++: Wrote a CFD solver and several other codes to analyze fluid dynamics.</p>
-    <p>Fortran: Wrote FEM codes to model fluid motion and added a turbine model in Incompact3D.</p>
-    <p>Python: Wrote codes for visualization and analysis of large CFD data sets.</p>
-    <p>MPI: Parallelized the CFD code that runs on hundreds of cores.</p>
-    <p>MATLAB: Wrote machine learning codes and post-processed large CFD data sets.</p>
-
-    <li>Other skills go here...</li>
-  </ul>
-
-  <h2>Publications</h2>
-  <ul>
-    <li>Das, R. and Shen, Y.-L. (2023). Analysis of wind farms under different yaw angles and wind speeds, Energies.</li>
-    <li>Das, R. and Lee, S. (2019). Numerical Perspectives on Wind Turbine Wakes. APS Meeting.</li>
-    <li>Talaat, K., Das, R., Romero, B., Cakez, C., Anderoglu, O., Lee, S., Lee, Y., Ban, H., Woloshun, K., Kim, S. J., et al. (2019). Development of a numerical framework to model flow accelerated corrosion in a lead loop. NURETH Meeting.</li>
-    <li>Das, R. (2017). Multi-scale analysis of turbulent thermal boundary layer with zero pressure gradient, MSc thesis.</li>
-  </ul>
-
-  <h2>Projects</h2>
-  <ul>
-    <li>Design and construction of portable experimental setup for measuring the thermal conductivity of locally available insulating materials, BSc thesis.</li>
-    <p>Built accurate thermal conductivity testing setup achieving less than 5% deviation from manufacturers' claimed values using Brass disc, thermocouple, brass steam chamber, and stainless steel steam generator.</p>
-
-    <li>Automatic color-based product sorting machine, Undergraduate project.</li>
-    <p>Developed automated color sorting machine using RGB and IR sensors, conveyor belts, servo motor, and microcontroller.</p>
-  </ul>
-
-  <h2>Relevant Courses</h2>
-  <p>Advanced Convection Heat Transfer, Conduction and Radiation Heat Transfer, Convection, Boiling, Condensation and Mass Transfer, Advanced Thermodynamics, Classical Thermodynamics, Computational Fluid Dynamics, Turbulent Flows, Fluid Mechanics, Mechanics of Viscous Fluid, Mechanics of Inviscid Compressible Fluid, Energy Storage & Conversion Systems, Machine Design, Machine Tools, Mechanics of Machinery, Fluid Machinery, Refrigeration and Building Mechanical Systems, Fluidics, Instrumentation and Measurement, Measurement and Quality Control, Electrical and Electronics Technology, V&V in Comp. Mech., Composite Materials, Computational Mechanics, Industrial Management, Production Processes, Advanced Numerical Analysis, Applied Engineering Mathematics, Machine Learning.</p>
-
-  <h2>Leadership Roles</h2>
-  <ul>
-    <li>President of the Mechanical Engineering Graduate Association, UNM Chapter. (2022-2023)</li>
-    <li>President of the Bengal United Sports Club, UNM. (2020-2021)</li>
-    <li>Secretary of the Mechanical Engineering Graduate Association, UNM Chapter. (2020-2022)</li>
-  </ul>
-
-  <h2>Additional Information</h2>
-  <p>Undergraduate Technical Scholarship (BUET), Trilingual.</p>
-  <p>References are available upon request.</p>
+  <div class="container">
+    <!-- Your resume content goes here -->
+    <p>RUBEL CHANDRA DAS</p>
+    <p>Albuquerque, NM | rubeldas296@unm.edu | +1(505) 219-8800</p>
+    <p><a href="mailto:rubeldas296@gmail.com">Gmail</a></p>
+    <p><a href="https://www.linkedin.com/in/rubel-chandra-das-993b2899/">Linkedin</a></p>
+    <p><a href="https://scholar.google.com/citations?user=ZKNAUToAAAAJ&hl=en">Google Scholar</a></p>
+    <p><a href="https://github.com/RUBEL-CHANDRA-DAS">Github</a></p>
+  
+    <h2>Core Competencies</h2>
+    <ul>
+      <li>Developed, verified, and validated a high-fidelity massively parallel CFD solver (in C and MPI, 30K lines) from scratch to model and simulate complex aerodynamic phenomena.</li>
+      <li>Proficient in CFD software tools (COMSOL Multiphysics, STAR-CCM+, ANSYS Fluent).</li>
+      <li>Designed, verified, and validated thermal devices achieving less than 5% deviation from manufacturers' claimed values; performed data quality control, analyzed, prepared reports.</li>
+      <li>Experienced in design of experiments, data collection, statistical analysis, and visualization.</li>
+      <li>Acquired a thorough understanding of heat and fluid flow and their practical applications.</li>
+      <li>Have factory experience; knowledgeable in supply chains and factory production processes.</li>
+    </ul>
+  
+    <h2>Education</h2>
+    <p><strong>Doctor of Philosophy (Ph.D.) in Mechanical Engineering</strong></p>
+    <p>Anticipated: 10/2023</p>
+    <p>The University of New Mexico (UNM), Albuquerque, NM.</p>
+  
+    <p><strong>Master of Science (MSc) in Mechanical Engineering</strong></p>
+    <p>Completed: 8/2017</p>
+    <p>Bangladesh University of Engineering and Technology (BUET), Dhaka, BD.</p>
+  
+    <p><strong>Bachelor of Science (BSc) in Mechanical Engineering</strong></p>
+    <p>Completed: 9/2015</p>
+    <p>Bangladesh University of Engineering and Technology (BUET), Dhaka, BD.</p>
+  
+    <h2>Professional Experience</h2>
+    <ul>
+      <li><strong>Research Assistant</strong>, Department of Mechanical Engineering, UNM. (8/2017 to 10/2023)</li>
+      <p>Developed a massively parallel high-fidelity CFD solver with C and MPI from scratch (30K lines), with several LES turbulence models for Wind Farm Simulation and other fluid simulations.</p>
+      <p>Wind Farm Optimization and Analysis of Complex Wake Structures, PhD thesis.</p>
+      <p>Research details go here...</p>
+  
+      <li><strong>Research Assistant</strong>, Center for Advanced Research Computing, UNM. (1/2018 to 7/2018)</li>
+      <p>Supported the high-performance computing environments at CARC.</p>
+      <p>Troubleshot job scheduling and resolved errors in PBS scripts.</p>
+      <p>Conducted benchmarking for compilers and tested the scalability of open-source codes.</p>
+  
+      <li><strong>Teaching Assistant</strong>, Department of Mechanical Engineering, UNM. (8/2017 to 12/2021)</li>
+      <p>Taught classes and graded papers for various courses.</p>
+      <p>Teaching details go here...</p>
+  
+      <li><strong>Summer Intern</strong>, Avery Dennison Bangladesh Limited, Dhaka. (6/2015 to 8/2015)</li>
+      <p>Conducted a comprehensive analysis of manufacturing and distribution procedures for various products and proposed improved alternatives.</p>
+    </ul>
+  
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Simulation Software:</li>
+      <p>COMSOL Multiphysics: Evaluated different turbulence models, validated the best model, and investigated the effects of Reynolds and Prandtl numbers on the momentum and energy fields in a turbulent thermal boundary layer using multi-scale analysis. MSc thesis.</p>
+      <p>STAR-CCM+: Analyzed laminar and turbulent boundary layers utilizing various turbulence models. Grad. course project.</p>
+      <p>ANSYS Fluent: Conducted validation and verification procedures to confirm the accuracy of fluid flow simulation results. Grad. course project.</p>
+  
+      <li>Programming Languages:</li>
+      <p>C/C++: Wrote a CFD solver and several other codes to analyze fluid dynamics.</p>
+      <p>Fortran: Wrote FEM codes to model fluid motion and added a turbine model in Incompact3D.</p>
+      <p>Python: Wrote codes for visualization and analysis of large CFD data sets.</p>
+      <p>MPI: Parallelized the CFD code that runs on hundreds of cores.</p>
+      <p>MATLAB: Wrote machine learning codes and post-processed large CFD data sets.</p>
+  
+      <li>Other skills go here...</li>
+    </ul>
+  
+    <h2>Publications</h2>
+    <ul>
+      <li>Das, R. and Shen, Y.-L. (2023). Analysis of wind farms under different yaw angles and wind speeds, Energies.</li>
+      <li>Das, R. and Lee, S. (2019). Numerical Perspectives on Wind Turbine Wakes. APS Meeting.</li>
+      <li>Talaat, K., Das, R., Romero, B., Cakez, C., Anderoglu, O., Lee, S., Lee, Y., Ban, H., Woloshun, K., Kim, S. J., et al. (2019). Development of a numerical framework to model flow accelerated corrosion in a lead loop. NURETH Meeting.</li>
+      <li>Das, R. (2017). Multi-scale analysis of turbulent thermal boundary layer with zero pressure gradient, MSc thesis.</li>
+    </ul>
+  
+    <h2>Projects</h2>
+    <ul>
+      <li>Design and construction of portable experimental setup for measuring the thermal conductivity of locally available insulating materials, BSc thesis.</li>
+      <p>Built accurate thermal conductivity testing setup achieving less than 5% deviation from manufacturers' claimed values using Brass disc, thermocouple, brass steam chamber, and stainless steel steam generator.</p>
+  
+      <li>Automatic color-based product sorting machine, Undergraduate project.</li>
+      <p>Developed automated color sorting machine using RGB and IR sensors, conveyor belts, servo motor, and microcontroller.</p>
+    </ul>
+  
+    <h2>Relevant Courses</h2>
+    <p>Advanced Convection Heat Transfer, Conduction and Radiation Heat Transfer, Convection, Boiling, Condensation and Mass Transfer, Advanced Thermodynamics, Classical Thermodynamics, Computational Fluid Dynamics, Turbulent Flows, Fluid Mechanics, Mechanics of Viscous Fluid, Mechanics of Inviscid Compressible Fluid, Energy Storage & Conversion Systems, Machine Design, Machine Tools, Mechanics of Machinery, Fluid Machinery, Refrigeration and Building Mechanical Systems, Fluidics, Instrumentation and Measurement, Measurement and Quality Control, Electrical and Electronics Technology, V&V in Comp. Mech., Composite Materials, Computational Mechanics, Industrial Management, Production Processes, Advanced Numerical Analysis, Applied Engineering Mathematics, Machine Learning.</p>
+  
+    <h2>Leadership Roles</h2>
+    <ul>
+      <li>President of the Mechanical Engineering Graduate Association, UNM Chapter. (2022-2023)</li>
+      <li>President of the Bengal United Sports Club, UNM. (2020-2021)</li>
+      <li>Secretary of the Mechanical Engineering Graduate Association, UNM Chapter. (2020-2022)</li>
+    </ul>
+  
+    <h2>Additional Information</h2>
+    <p>Undergraduate Technical Scholarship (BUET), Trilingual.</p>
+    <p>References are available upon request.</p>
+  </div>
 </body>
 </html>
