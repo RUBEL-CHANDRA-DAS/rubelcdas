@@ -1,60 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Grid Practice</title>
-  </head>
-  <body style="padding-bottom: 1000px;">
-    <div style="
-      display: grid;
-      grid-template-columns: 100px 100px;
-    ">
-      <div style="background-color: lightblue;">div 1</div>
-      <div style="background-color: lightpink;">div 2<p>text</p></div>
-    </div>
+<body>
 
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 100px 200px;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">100px<p>text</p></div>
-      <div style="background-color: lightblue;">200px</div>
-      <div style="background-color: lightpink;">100px</div>
-    </div>
+<div class="slideshow">
+<ul class="slideshow">
+<li class="" style="opacity: 0;"><img style="width:100%" src="images/r2_29f.jpg" alt="Wind-farm simulation"></li>
+<li style="opacity: 0;" class="">             <img style="width:100%" src="images/CWBL_progress_report.jpg" alt="Atmospheric boundary layer flow"></li>
+<li style="opacity: 1;" class="show">             <img style="width:100%" src="images/t_Ra2_91e8_gamma2.jpg" alt="Rotating Rayleigh-Bénard convection"></li>
+<li style="opacity: 0;" class="">             <img style="width:100%" src="images/temp_vertical1.jpg" alt="High Rayleigh number Rayleigh-Bénard simulation"></li>
+<li id="slideshow-caption" class="caption" style="opacity: 0.6; bottom: 0px; display: list-item;"><div class="slideshow-caption-container"><p>Rotating Rayleigh-Bénard convection</p></div></li></ul> 
+</div><!--close slideshow-->
 
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 1fr;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">1fr</div>
-    </div>
+<!-- javascript at the bottom for fast page loading -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/image_slide.js"></script>
+	
 
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 100px 1fr 2fr;
-    ">
-      <div style="background-color: lightblue;">100px</div>
-      <div style="background-color: lightpink;">1fr</div>
-      <div style="background-color: lightblue;">2fr</div>
-    </div>
 
-    <div style="
-      margin-top: 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 20px;
-      row-gap: 40px;
-    ">
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
-      <div style="background-color: lightblue; height: 200px;">1fr</div>
-      <div style="background-color: lightpink; height: 200px;">1fr</div>
-    </div>
-  </body>
-</html>
+</body>
