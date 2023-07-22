@@ -5,6 +5,33 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script type="text/javascript" id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<!-- Style for resume starts here -->
+  
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 1em;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+    }
+  </style>
+  <script>
+    function resizeIframe() {
+      const iframe = document.getElementById('resume-iframe');
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+  </script>
+  
+<!-- Style for resume ends here -->  
+
 </head>
 <body>
   <header>
