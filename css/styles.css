@@ -161,3 +161,8 @@ ul li {
 .right-text {
   margin-left: 20px;
 }
+
+/* Reduce the space between lines */
+.left-text p, .right-text {
+  line-height: 1.2; /* You can adjust this value to your preference */
+}
