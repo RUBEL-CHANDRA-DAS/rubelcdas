@@ -77,3 +77,29 @@ ul.posts {
 ul.posts li {
   list-style: none;
 }
+
+
+/* Add the styles for the slideshow */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Optional: Add styles for slide transition animation */
+.fade {
+  animation: fade 2s ease-in-out infinite; /* Change the animation duration and timing function as needed */
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 0; }
+  20%, 80% { opacity: 1; }
+}
+
