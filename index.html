@@ -3,138 +3,76 @@
 <head>
   <title>YOUR NAME Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 <body>
   <header>
-    <nav class="topnav">
-      <ul>
-        <li><a href="#" onclick="showSection('home')">Home</a></li>
-        <li><a href="#" onclick="showSection('about')">About</a></li>
-        <li><a href="#" onclick="showSection('resume')">Resume</a></li>
-        <li><a href="#" onclick="showSection('blog')">Blog</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-      <div id="home" class="blurb">
-        <h1>Hi, I am RUBEL CHANDRA DAS!</h1>
-        <p>Welcome, thank you for visiting my website!</p>
-      </div>
-      <div id="about" class="blurb" style="display: none;">
-        <!-- Add content for the About section here -->
-        <h1>About Me</h1>
-        <p>
-          I'm a Ph.D. candidate in the Mechanical Engineering Department at the University of New Mexico (UNM), USA.
-          I have an M.Sc. and a B.Sc. degree from the Mechanical Engineering Department at the Bangladesh University
-          of Engineering and Technology, Bangladesh., in 2017 and 2015, respectively.
-        </p>
-      </div>
+    <!-- Your header content -->
+  </header>
 
-      <!-- RESUME SECTION STARTS HERE -->
-      
-      <div id="resume" class="blurb" style="display: none;">
-        <!-- Add content for the Resume section here -->
-        <h2>Resume</h2>
-        <div class="katex-display">
+  <div class="container">
+    <div id="home" class="blurb">
+      <!-- Home content -->
+    </div>
+
+    <div id="about" class="blurb" style="display: none;">
+      <!-- About content -->
+    </div>
+
+    <!-- RESUME SECTION STARTS HERE -->
+    <div id="resume" class="blurb" style="display: none;">
+      <h2>Resume</h2>
+      <div>
+        <script type="math/tex">
           \documentclass{article}
           \begin{document}
           
           \section{Personal Information}
-          Your Name <br>
-          Your Address <br>
-          Your Phone Number <br>
+          Your Name \\
+          Your Address \\
+          Your Phone Number \\
           Your Email Address
           
           \section{Education}
-          \textbf{Ph.D. in Mechanical Engineering} <br>
-          University of XYZ, Country <br>
-          Year - Year <br>
+          \textbf{Ph.D. in Mechanical Engineering} \\
+          University of XYZ, Country \\
+          Year - Year \\
           
-          \textbf{M.Sc. in Mechanical Engineering} <br>
-          University of ABC, Country <br>
-          Year - Year <br>
+          \textbf{M.Sc. in Mechanical Engineering} \\
+          University of ABC, Country \\
+          Year - Year \\
           
-          \textbf{B.Sc. in Mechanical Engineering} <br>
-          University of PQR, Country <br>
-          Year - Year <br>
+          \textbf{B.Sc. in Mechanical Engineering} \\
+          University of PQR, Country \\
+          Year - Year \\
           
           \section{Skills}
-          - Skill 1 <br>
-          - Skill 2 <br>
+          - Skill 1 \\
+          - Skill 2 \\
           - Skill 3
           
           \section{Experience}
-          \textbf{Job Title} <br>
-          Company Name, Location <br>
+          \textbf{Job Title} \\
+          Company Name, Location \\
           Date - Date
           
           \section{Publications}
-          - Publication 1 <br>
-          - Publication 2 <br>
+          - Publication 1 \\
+          - Publication 2 \\
           - Publication 3
           
           \end{document}
-        </div>
-      </div>
-      
-      <!-- RESUME SECTION ENDS HERE -->
-      
-      <div id="resume" class="blurb" style="display: none;">
-        <!-- Add content for the Resume section here -->
-        <h2>Resume</h2>
-        <div>
-          <span class="katex">
-            \documentclass{article}
-            \begin{document}
-            
-            \section{Personal Information}
-            Your Name <br>
-            Your Address <br>
-            Your Phone Number <br>
-            Your Email Address
-            
-            \section{Education}
-            \textbf{Ph.D. in Mechanical Engineering} <br>
-            University of XYZ, Country <br>
-            Year - Year <br>
-            
-            \textbf{M.Sc. in Mechanical Engineering} <br>
-            University of ABC, Country <br>
-            Year - Year <br>
-            
-            \textbf{B.Sc. in Mechanical Engineering} <br>
-            University of PQR, Country <br>
-            Year - Year <br>
-            
-            \section{Skills}
-            - Skill 1 <br>
-            - Skill 2 <br>
-            - Skill 3
-            
-            \section{Experience}
-            \textbf{Job Title} <br>
-            Company Name, Location <br>
-            Date - Date
-            
-            \section{Publications}
-            - Publication 1 <br>
-            - Publication 2 <br>
-            - Publication 3
-            
-            \end{document}
-          </span>
-        </div>
-      </div>
-
-<!-- RESUME SECTION ENDS HERE -->
-      
-      
-      <div id="blog" class="blurb" style="display: none;">
-        <!-- Add content for the Blog section here -->
+        </script>
       </div>
     </div>
-  </header>
+    <!-- RESUME SECTION ENDS HERE -->
+
+    <div id="blog" class="blurb" style="display: none;">
+      <!-- Blog content -->
+    </div>
+  </div>
+
   <footer>
     <p><a href="mailto:rubeldas296@unm.edu">YOUREMAIL</a></p>
   </footer>
@@ -146,6 +84,7 @@
         sections[i].style.display = 'none';
       }
       document.getElementById(sectionId).style.display = 'block';
+      MathJax.typesetPromise();
     }
   </script>
 </body>
