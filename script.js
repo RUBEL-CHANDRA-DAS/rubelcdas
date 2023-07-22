@@ -15,4 +15,6 @@ function showSlides() {
 }
 
 // Start the slideshow when the page loads
-window.onload = showSlides;
+window.onload = function () {
+  showSlides(); // Corrected the function call
+};
