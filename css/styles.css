@@ -10,29 +10,18 @@ body {
   font-family: Arial, sans-serif; /* Optional: Set the font family for the body */
 }
 
-nav {
+.topnav {
   text-align: center; /* Center the navigation links */
   margin-top: 1in; /* Add a 1-inch margin at the top */
 }
 
-nav ul {
-  padding: 0;
-  list-style: none;
-  font-weight: bold;
-  display: inline-block; /* Set the display to inline-block to center the navigation links */
-}
-
-nav ul li {
-  display: inline; /* Display the list items inline to avoid extra spacing */
+.topnav a {
+  text-decoration: none;
+  color: #999;
   margin-right: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: #999;
-}
-
-a:hover {
+.topnav a:hover {
   text-decoration: underline;
 }
 
@@ -56,6 +45,11 @@ p {
 footer {
   border-top: 1px solid #d5d5d5;
   font-size: .8em;
+  padding-top: 10px;
+}
+
+footer p {
+  margin: 0;
 }
 
 ul.posts {
