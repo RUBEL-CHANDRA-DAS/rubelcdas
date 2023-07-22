@@ -8,15 +8,11 @@ body {
   margin: 0; /* Remove any default margin to avoid white space */
   padding: 0; /* Remove any default padding to avoid white space */
   font-family: Arial, sans-serif; /* Optional: Set the font family for the body */
-  display: flex; /* Use flexbox to center the content */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
 }
 
 nav {
   text-align: center; /* Center the navigation links */
-  margin: 1in auto 0; /* Add a 1-inch margin at the top and center horizontally */
-  width: 100%; /* Set the width to create a centered container */
+  margin-top: 1in; /* Add a 1-inch margin at the top */
 }
 
 nav ul {
@@ -24,6 +20,11 @@ nav ul {
   list-style: none;
   font-weight: bold;
   display: inline-block; /* Set the display to inline-block to center the navigation links */
+}
+
+nav ul li {
+  display: inline; /* Display the list items inline to avoid extra spacing */
+  margin-right: 20px;
 }
 
 a {
@@ -38,7 +39,7 @@ a:hover {
 .container {
   text-align: center; /* Center the content within the container */
   width: 70%; /* Set the width of the container */
-  margin-top: 1in; /* Add a 1-inch margin at the top */
+  margin: 1in auto; /* Add a 1-inch margin at the top and center horizontally */
 }
 
 h1 {
