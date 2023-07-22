@@ -4,15 +4,23 @@
   <title>YOUR NAME Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="script.js"></script>
+  <style>
+    .highlighted-text {
+      color: blue; /* Replace 'blue' with the desired color */
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav class="topnav">
       <ul>
-        <li><a href="#" onclick="showSection('home')">Home</a></li>
-        <li><a href="#" onclick="showSection('about')">About</a></li>
-        <li><a href="#" onclick="showSection('resume')">Resume</a></li>
-        <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+        <li><a href="#" class="highlighted-text" onclick="showSection('home')">HOME</a></li>
+        <li><a href="#" class="highlighted-text" onclick="showSection('about')">ABOUT</a></li>
+        <li><a href="#" class="highlighted-text" onclick="showSection('research')">RESEARCH</a></li>
+        <li><a href="#" class="highlighted-text" onclick="showSection('project')">PROJECT</a></li>
+        <li><a href="#" class="highlighted-text" onclick="showSection('publication')">PUBLICATION</a></li>
+        <li><a href="#" class="highlighted-text" onclick="showSection('resume')">RESUME</a></li>
+        <li><a href="#" class="highlighted-text" onclick="showSection('blog')">BLOG</a></li>
       </ul>
     </nav>
     <div class="container">
