@@ -149,9 +149,15 @@ ul li {
 .education-item {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; /* To align the content at the top */
+  margin-bottom: 10px; /* Add some spacing between education items */
 }
 
-.left-content {
-  margin: 20px 0;
+.left-text {
+  margin-right: 20px;
+  flex: 1; /* To allow the text to take up the available space in the flex container */
+}
+
+.right-text {
+  margin-left: 20px;
 }
