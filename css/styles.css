@@ -41,3 +41,8 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+body {
+  background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+  background-size: cover; /* This property ensures the background image covers the entire body */
+}
