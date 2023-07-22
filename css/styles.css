@@ -145,23 +145,13 @@ ul li {
   margin-bottom: 10px; /* Add some spacing between list items (optional) */
 }
 
-/* Add styles for the education items container */
+/* Add the following CSS to your stylesheet */
 .education-item {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
-/* Add styles for each education item */
-.education-item p {
-  /*text-align: left;*/
-  margin-left: 20px; /* Add some left margin for indentation (optional) */
-}
-
-h2 + p {
-  margin-top: 0.5em; /* Adjust the value as needed to control the spacing */
-}
-
-.education-item p:last-child {
-  /*text-align: left;*/
-  margin-left: 20px; /* Add some left margin for indentation (optional) */
+.left-content {
+  margin: 20px 0;
 }
