@@ -33,7 +33,7 @@
       <div id="resume" class="blurb" style="display: none;">
         <!-- Add an iframe to load the resume.html file -->
         <h1>My Resume</h1>
-        <iframe id="resume-iframe" src="resume.html"></iframe>
+        <iframe id="resume-iframe" src="resume.html" onload="adjustIframeHeight()"></iframe>
       </div>
       <!-- RESUME SECTION ENDS HERE -->
       
@@ -61,21 +61,12 @@
     function adjustIframeHeight() {
       var iframe = document.getElementById('resume-iframe');
       if (iframe) {
-        iframe.contentWindow.postMessage(
-          { type: 'resize', height: document.body.scrollHeight },
-          '*'
-        );
+        var body = iframe.contentWindow.document.body;
+        var html = iframe.contentWindow.document.documentElement;
+        var contentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        iframe.style.height = contentHeight + 'px';
       }
     }
-
-    window.addEventListener('message', function (event) {
-      if (event.data.type === 'resize') {
-        var iframe = document.getElementById('resume-iframe');
-        if (iframe) {
-          iframe.style.height = event.data.height + 'px';
-        }
-      }
-    });
   </script>
 </body>
 </html>
