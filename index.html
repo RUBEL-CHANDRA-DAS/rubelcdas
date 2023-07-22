@@ -3,35 +3,6 @@
 <head>
   <title>YOUR NAME Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-<!-- Style for resume starts here -->
-  
-  <title>My Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 1em;
-    }
-    h1 {
-      font-size: 1.8em;
-      margin-bottom: 1em;
-    }
-    iframe {
-      width: 100%;
-      border: none;
-    }
-  </style>
-  <script>
-    function resizeIframe() {
-      const iframe = document.getElementById('resume-iframe');
-      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-    }
-  </script>
-  
-<!-- Style for resume ends here -->  
-
 </head>
 <body>
   <header>
@@ -62,7 +33,7 @@
       <div id="resume" class="blurb" style="display: none;">
         <!-- Add an iframe to load the resume.html file -->
         <h1>My Resume</h1>
-        <iframe id="resume-iframe" src="resume.html" onload="resizeIframe()"></iframe>
+        <iframe id="resume-iframe" src="resume.html"></iframe>
       </div>
       <!-- RESUME SECTION ENDS HERE -->
       
@@ -82,7 +53,29 @@
         sections[i].style.display = 'none';
       }
       document.getElementById(sectionId).style.display = 'block';
+      if (sectionId === 'resume') {
+        adjustIframeHeight();
+      }
     }
+
+    function adjustIframeHeight() {
+      var iframe = document.getElementById('resume-iframe');
+      if (iframe) {
+        iframe.contentWindow.postMessage(
+          { type: 'resize', height: document.body.scrollHeight },
+          '*'
+        );
+      }
+    }
+
+    window.addEventListener('message', function (event) {
+      if (event.data.type === 'resize') {
+        var iframe = document.getElementById('resume-iframe');
+        if (iframe) {
+          iframe.style.height = event.data.height + 'px';
+        }
+      }
+    });
   </script>
 </body>
 </html>
