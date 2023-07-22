@@ -154,14 +154,14 @@ ul li {
 }
 
 .left-text {
+  text-align: left;
   margin-right: 20px;
   flex: 1; /* To allow the text to take up the available space in the flex container */
-  text-align: left;
 }
 
 .right-text {
-  margin-left: 20px;
   text-align: right;
+  margin-left: 20px;
 }
 
 /* Reduce the space between lines */
