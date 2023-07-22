@@ -39,7 +39,7 @@ header .topnav a:hover {
 .container {
   text-align: center; /* Center the content within the container */
   width: 100%; /* Set the width of the container */
-  max-width: 8000px; /* Set a maximum width for the container to avoid excessive width on larger screens */
+  max-width: 100%; /* Set a maximum width for the container to avoid excessive width on larger screens */
   margin: 1in auto; /* Add a 1-inch margin at the top and center horizontally */
 }
 
@@ -81,7 +81,7 @@ ul.posts li {
 
 /* Add the styles for the slideshow */
 .slideshow-container {
-  max-width: 100%;
+  max-width: 70%;
   position: relative;
 }
 
