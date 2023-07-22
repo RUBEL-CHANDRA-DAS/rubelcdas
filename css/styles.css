@@ -156,13 +156,15 @@ ul li {
 .left-text {
   margin-right: 20px;
   flex: 1; /* To allow the text to take up the available space in the flex container */
+  text-align: left;
 }
 
 .right-text {
   margin-left: 20px;
+  text-align: right;
 }
 
 /* Reduce the space between lines */
 .left-text p, .right-text {
-  line-height: 0.0; /* You can adjust this value to your preference */
+  line-height: 0.5; /* You can adjust this value to your preference */
 }
