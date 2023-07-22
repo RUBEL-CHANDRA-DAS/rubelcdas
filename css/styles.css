@@ -153,13 +153,15 @@ ul li {
 
 /* Add styles for each education item */
 .education-item p {
-  margin: 0;
+  text-align: left;
+  margin-left: 20px; /* Add some left margin for indentation (optional) */
 }
 
 h2 + p {
-  margin-top: 0.5em; /* Adjust the value as needed to control the spacing */
+  margin-top: -0.5em; /* Adjust the value as needed to control the spacing */
 }
 
 .education-item p:last-child {
-  margin-left: 0; /* Remove the default left margin */
+  text-align: left;
+  margin-left: 20px; /* Add some left margin for indentation (optional) */
 }
