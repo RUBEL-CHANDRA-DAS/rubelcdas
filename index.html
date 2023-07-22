@@ -5,30 +5,34 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="topnav">
-    <a href="#" onclick="showSection('home')">Home</a>
-    <a href="#" onclick="showSection('about')">About</a>
-    <a href="#" onclick="showSection('resume')">Resume</a>
-    <a href="#" onclick="showSection('blog')">Blog</a>
-  </div>
-  <div class="container">
-    <div id="home" class="blurb">
-      <h1>Hi, I am RUBEL CHANDRA DAS!</h1>
-      <p>This is my first page for my personal website!</p>
+  <header>
+    <nav class="topnav">
+      <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('resume')">Resume</a></li>
+        <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div id="home" class="blurb">
+        <h1>Hi, I am RUBEL CHANDRA DAS!</h1>
+        <p>This is my first page for my personal website!</p>
+      </div>
+      <div id="about" class="blurb" style="display: none;">
+        <!-- Add content for the About section here -->
+        I'm a Ph.D. candidate in the Mechanical Engineering Department at the University of New Mexico (UNM), USA.
+        I have an M.Sc. and a B.Sc. degree from the Mechanical Engineering Department at the Bangladesh University
+        of Engineering and Technology, Bangladesh., in 2017 and 2015, respectively.
+      </div>
+      <div id="resume" class="blurb" style="display: none;">
+        <!-- Add content for the Resume section here -->
+      </div>
+      <div id="blog" class="blurb" style="display: none;">
+        <!-- Add content for the Blog section here -->
+      </div>
     </div>
-    <div id="about" class="blurb" style="display: none;">
-      <!-- Add content for the About section here -->
-      I'm a Ph.D. candidate in the Mechanical Engineering Department at the University of New Mexico (UNM), USA.
-      I have an M.Sc. and a B.Sc. degree from the Mechanical Engineering Department at the Bangladesh University
-      of Engineering and Technology, Bangladesh., in 2017 and 2015, respectively.
-    </div>
-    <div id="resume" class="blurb" style="display: none;">
-      <!-- Add content for the Resume section here -->
-    </div>
-    <div id="blog" class="blurb" style="display: none;">
-      <!-- Add content for the Blog section here -->
-    </div>
-  </div>
+  </header>
   <footer>
     <p><a href="mailto:YOUREMAIL">YOUREMAIL</a></p>
   </footer>
