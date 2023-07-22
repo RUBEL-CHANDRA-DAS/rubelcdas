@@ -54,11 +54,14 @@ p {
 }
 
 footer {
+  position: fixed;
+  bottom: 1in; /* Adjust this value to change the margin from the bottom */
+  left: 0;
+  right: 0;
+  text-align: center;
   border-top: 1px solid #d5d5d5;
   font-size: .8em;
   padding-top: 10px;
-  bottom: 20px; /* Adjust this value to change the position of the footer from the bottom */
-  text-align: center; /* Center the content within the footer */
 }
 
 footer p {
