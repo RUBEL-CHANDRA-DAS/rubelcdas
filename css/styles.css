@@ -83,6 +83,7 @@ ul.posts li {
 .slideshow-container {
   max-width: 70%;
   position: relative;
+  margin: 0 auto; /* Add this line to center the container horizontally */
 }
 
 .slide {
