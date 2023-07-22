@@ -164,5 +164,5 @@ ul li {
 
 /* Reduce the space between lines */
 .left-text p, .right-text {
-  line-height: 1.2; /* You can adjust this value to your preference */
+  line-height: 0.0; /* You can adjust this value to your preference */
 }
