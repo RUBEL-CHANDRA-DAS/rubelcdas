@@ -131,3 +131,16 @@ img {
   display: inline; /* Make each link appear inline */
   margin-right: 10px; /* Add some spacing between the links */
 }
+
+
+/* Add styles for the unordered list */
+ul {
+  text-align: left;
+  margin-left: 20px; /* Add some left margin for indentation (optional) */
+}
+
+/* Add styles for list items */
+ul li {
+  list-style-type: disc; /* Add bullet points for each list item */
+  margin-bottom: 10px; /* Add some spacing between list items (optional) */
+}
