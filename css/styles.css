@@ -168,3 +168,8 @@ ul li {
 .left-text p, .right-text {
   line-height: 0.5; /* You can adjust this value to your preference */
 }
+
+#home.blurb {
+  margin-left: 20px; /* Set the left margin to 20px */
+  margin-right: 20px; /* Set the right margin to 20px */
+}
