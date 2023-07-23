@@ -80,26 +80,18 @@
     </div>
   </header>
   <script>
-    function showSection(sectionId) {
-      var sections = document.getElementsByClassName('blurb');
-      for (var i = 0; i < sections.length; i++) {
-        sections[i].style.display = 'none';
-      }
-      document.getElementById(sectionId).style.display = 'block';
-      if (sectionId === 'resume') {
-        adjustIframeHeight();
-      }
-    }
-  
-    function adjustIframeHeight() {
-      var iframe = document.getElementById('resume-iframe');
-      if (iframe) {
-        var body = iframe.contentWindow.document.body;
-        var html = iframe.contentWindow.document.documentElement;
-        var contentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-        iframe.style.height = contentHeight + 'px';
-      }
-    }
+
+    // Fetch the content from project-content.html using Fetch API
+    fetch('project-content.html')
+      .then(response => response.text())
+      .then(content => {
+        // Inject the fetched content into the resume-content div
+        document.getElementById('project-content').innerHTML = content;
+      })
+      .catch(error => {
+        console.error('Error fetching content:', error);
+      });
+
     // Fetch the content from resume-content.html using Fetch API
     fetch('resume-content.html')
       .then(response => response.text())
