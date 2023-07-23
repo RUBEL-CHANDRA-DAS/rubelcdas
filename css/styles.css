@@ -151,23 +151,12 @@ img {
   margin-bottom: 0; /* Remove the default margin between the divs */
 }
 
-.left-text {
-  text-align: left;
-  margin-right: 20px;
-  flex: 1; /* To allow the text to take up the available space in the flex container */
+.project {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
 }
-
-.right-text {
-  text-align: right;
-  margin-left: 20px;
-}
-
-/* Reduce the space between lines */
-.left-text p, .right-text {
-  line-height: 0.5; /* You can adjust this value to your preference */
-}
-
-#home.blurb {
-  margin-left: 20px; /* Set the left margin to 20px */
-  margin-right: 20px; /* Set the right margin to 20px */
+.project img {
+  max-width: 100%;
+  margin-bottom: 10px;
 }
