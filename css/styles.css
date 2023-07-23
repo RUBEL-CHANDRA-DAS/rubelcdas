@@ -133,16 +133,22 @@ img {
 }
 
 
-/* Add styles for the unordered list */
-ul {
+/* Add styles for the unordered list and education-item */
+.left-align,
+.education-item {
   text-align: left;
-  margin-left: 20px; /* Add some left margin for indentation (optional) */
+  margin-left: 20px;
 }
 
 /* Add styles for list items */
-ul li {
+.left-align li {
   list-style-type: disc; /* Add bullet points for each list item */
   margin-bottom: 10px; /* Add some spacing between list items (optional) */
+}
+
+/* Add styles for the education-item divs */
+.education-item div {
+  margin-bottom: 0; /* Remove the default margin between the divs */
 }
 
 /* Add the following CSS to your stylesheet */
