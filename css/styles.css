@@ -151,14 +151,6 @@ img {
   margin-bottom: 0; /* Remove the default margin between the divs */
 }
 
-/* Add the following CSS to your stylesheet */
-.education-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* To align the content at the top */
-  margin-bottom: 10px; /* Add some spacing between education items */
-}
-
 .left-text {
   text-align: left;
   margin-right: 20px;
