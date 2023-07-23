@@ -232,7 +232,7 @@
       <div id="resume" class="blurb resume-section" style="display: none;">
       <div id="blog" class="blurb resume-section" style="display: none;">
         <!-- Add an iframe to load the resume-content.html file -->
-        <div id="resume"></div>
+        <div id="resume-content"></div>
       </div>
     </div>
   </header>
@@ -258,11 +258,11 @@
       }
     }
     // Fetch the content from resume-content.html using Fetch API
-    fetch('resume.html')
+    fetch('resume-content.html')
       .then(response => response.text())
       .then(content => {
         // Inject the fetched content into the resume-content div
-        document.getElementById('resume').innerHTML = content;
+        document.getElementById('resume-content').innerHTML = content;
       })
       .catch(error => {
         console.error('Error fetching content:', error);
