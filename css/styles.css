@@ -160,3 +160,16 @@ img {
   max-width: 100%;
   margin-bottom: 10px;
 }
+
+/* CSS for the image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* CSS to style the images */
+.image-grid img {
+  width: 100%; /* Ensure images take up full width of their container */
+  height: auto; /* Maintain aspect ratio */
+}
