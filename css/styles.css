@@ -173,3 +173,8 @@ img {
   width: 100%; /* Ensure images take up full width of their container */
   height: auto; /* Maintain aspect ratio */
 }
+
+/* CSS to make the icons bigger */
+.topnav li a {
+  font-size: 24px; /* Adjust the font size as needed */
+}
