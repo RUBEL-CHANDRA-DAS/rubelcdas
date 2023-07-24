@@ -170,8 +170,8 @@ img {
 
 /* CSS to style the images */
 .image-grid img {
-    width: 200px; /* Set the desired width */
-    height: 150px; /* Set the desired height */
+    width: 400px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
     object-fit: cover; /* This ensures the images maintain their aspect ratio while fitting the container */
 }
 
