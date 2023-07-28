@@ -72,12 +72,8 @@
       </div>
       
       <div id="about" class="blurb about-section" style="display: none;">
-        <!-- Add content for the About section here -->
-        <p>
-          I'm a Ph.D. candidate in the Mechanical Engineering Department at the University of New Mexico (UNM), USA.
-          I have an M.Sc. and a B.Sc. degree from the Mechanical Engineering Department at the Bangladesh University
-          of Engineering and Technology, Bangladesh., in 2017 and 2015, respectively.
-        </p>
+        <!-- Add an iframe to load the about-content.html file -->
+        <div id="about-content"></div>
       </div>
 
       <div id="project" class="blurb resume-section" style="display: none;">
@@ -125,6 +121,17 @@ Khaled Talaat, Rubel Das, Brian Romero, Cemal Cakez, Osman Anderoglu, Sang Lee, 
         adjustIframeHeight();
       }
     }
+
+    fetch('about-content.html')
+      .then(response => response.text())
+      .then(content => {
+        // Inject the fetched content into the about-content div
+        document.getElementById('about-content').innerHTML = content;
+      })
+      .catch(error => {
+        console.error('Error fetching content:', error);
+      });
+    
     fetch('project-content.html')
       .then(response => response.text())
       .then(content => {
