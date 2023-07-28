@@ -179,3 +179,13 @@ img {
 .topnav li a {
   font-size: 35px; /* Adjust the font size as needed */
 }
+
+/*coursework styles*/
+.course-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.course-list li {
+  font-size: 16px;
+}
