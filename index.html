@@ -145,6 +145,17 @@ Khaled Talaat, Rubel Das, Brian Romero, Cemal Cakez, Osman Anderoglu, Sang Lee, 
       .catch(error => {
         console.error('Error fetching content:', error);
       });
+    
+    // Fetch the content from resume-content.html using Fetch API
+    fetch('coursework-content.html')
+      .then(response => response.text())
+      .then(content => {
+        // Inject the fetched content into the coursework-content div
+        document.getElementById('coursework-content').innerHTML = content;
+      })
+      .catch(error => {
+        console.error('Error fetching content:', error);
+      });
   </script>
 
 </body>
