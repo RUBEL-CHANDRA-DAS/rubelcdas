@@ -181,15 +181,26 @@ img {
 }
 
 /*coursework styles*/
-.course-list {
-  list-style: none;
-  width: 70%; 
+.coursework-section {
+  width: 70%;
   margin: 0 auto;
-  padding-left: 0;
+  background-color: #FAF0DD;
+  padding: 20px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
+.course-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .course-list li {
   font-size: 16px;
+  width: 50%; /* Set each list item to occupy 50% of the width to create two columns */
+  box-sizing: border-box; /* Ensure the padding is included in the width */
+  padding: 5px; /* Optional: Add padding between list items */
 }
+
