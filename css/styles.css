@@ -182,6 +182,7 @@ img {
 
 /*coursework styles*/
 .coursework-section {
+  font-family: "Times New Roman"
   width: 70%;
   margin: 0 auto;
   padding: 20px;
