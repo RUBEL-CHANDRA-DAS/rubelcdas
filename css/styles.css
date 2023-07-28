@@ -183,6 +183,9 @@ img {
 /*coursework styles*/
 .course-list {
   list-style: none;
+  width: 70%; 
+  margin: 0 auto; 
+  background-color: #FAF0DD;
   padding-left: 0;
   margin-top: 0px;
   margin-bottom: 0px;
