@@ -154,6 +154,7 @@ img {
 
 .project {
   max-width: 70%;
+  margin: 0 auto; /* Center the section horizontally */
   margin-bottom: 30px;
   border: 1px solid #ccc;
   padding: 20px;
