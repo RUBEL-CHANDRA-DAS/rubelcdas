@@ -162,8 +162,8 @@ img {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 200px; /* Adjust the width of each column as per your preference */
-  grid-template-rows: 200px 200px; /* Adjust the height of each row as per your preference */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px; /* Adjust the height of each row as per your preference */
   gap: 10px; /* Adjust the gap as per your preference */
   width: 100%;
   height: 100%;
