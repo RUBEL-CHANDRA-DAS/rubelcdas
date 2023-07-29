@@ -162,8 +162,8 @@ img {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 200px 200px; /* Adjust the width of each column as per your preference */
+  grid-template-rows: 200px 200px; /* Adjust the height of each row as per your preference */
   gap: 10px; /* Adjust the gap as per your preference */
   width: 100%;
   height: 100%;
@@ -177,7 +177,7 @@ img {
 .grid-item img {
   width: 100%;
   height: 100%;
-  /*object-fit: cover; /* This ensures the images maintain their aspect ratio while fitting the container */
+  object-fit: fill; /* This will make the image fill the entire space without maintaining aspect ratio */
 }
 
 /* CSS to make the icons bigger */
