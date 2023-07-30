@@ -153,7 +153,9 @@ img {
 }
 
 .project {
-  max-width: 70%;
+  text-align: justify;
+  font-family: "Times New Roman";
+  max-width: 80%;
   margin: 0 auto; /* Center the section horizontally */
   margin-bottom: 30px;
   border: 1px solid #ccc;
@@ -187,7 +189,7 @@ img {
 
 /*coursework styles*/
 .coursework-section {
-  font-family: "Times New Roman"
+  font-family: "Times New Roman";
   width: 70%;
   margin: 0 auto;
   padding: 20px;
