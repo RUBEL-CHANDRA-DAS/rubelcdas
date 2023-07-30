@@ -91,7 +91,7 @@
 
   <!-- Project 5 -->
   <div class="project" style="background-color: #F5DEB3">
-    <h2><span class="highlight">Title:</span> Verification and validation of boundary layer with zero pressure gradient in Ansys Fluent and my 2D BL code, Graduate course project.</h2>
+    <h2><span class="highlight">Title:</span> Finite Element Analysis (FEA) of couette flow at different pressure gradients, Graduate course project.</h2>
     <!-- Grid collage containing four images -->
     <div class="grid-container">
       <div class="grid-item"><img src="pictures/coutte.png" alt="Image 1"></div>
@@ -100,12 +100,12 @@
       <div class="grid-item"><img src="pictures/truss.png" alt="Image 4"></div>
     </div>
     <p>
-      <span class="highlight">Project Description:</span> Simulated a planar laminar boundary layer flow over a flat plate using 5 different grids 8x8, 16x16, 32x32, 64x64, 128x128.
-      All the simulations were performed in Ansys Fluent and my own written 2D code BL for this course project. The statistics were compared against analytical results.
+      <span class="highlight">Project Description:</span> Simulated a couette flow with different pressure gradients with Finite Element Method (FEM). Pressure gradient was applied at all nodes,
+      for some cases just at few nodes. The velocity was kept at U = 0.9 ms<sup>-1</sup>, pressure gradient (dp/dx) varied from -0.001 to 0.0008, dynamic viscosity, μ = 0.00089. I used linear 
+      element for the this code, the grid aspect ratios were 1:1, 3:1.
     </p>
     <p>
       <span class="highlight">Findings:</span> The code provided reasonable results. It can be noticed from the above picture that the rightmost side is overlapping (back-flow) the surface
-of left side. The back-flow is defined as when the fluid goes backward under positive adverse pressure
-(when pressure increase in the direction of flow)
+      of left side. The back-flow is defined as when the fluid goes backward under positive adverse pressure (when pressure increase in the direction of flow).
     </p>
   </div>
