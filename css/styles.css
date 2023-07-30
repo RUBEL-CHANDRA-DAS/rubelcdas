@@ -212,3 +212,11 @@ img {
   padding: 5px; /* Optional: Add padding between list items */
 }
 
+.highlight {
+  font-weight: bold;
+}
+
+.colored {
+  color: red; /* You can change the color to your desired one */
+}
+
