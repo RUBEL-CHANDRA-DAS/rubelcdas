@@ -136,11 +136,21 @@ Khaled Talaat, Rubel Das, Brian Romero, Cemal Cakez, Osman Anderoglu, Sang Lee, 
       .catch(error => {
         console.error('Error fetching content:', error);
       });
+
+    fetch('research-content.html')
+      .then(response => response.text())
+      .then(content => {
+        // Inject the fetched content into the research-content div
+        document.getElementById('research-content').innerHTML = content;
+      })
+      .catch(error => {
+        console.error('Error fetching content:', error);
+      });
     
     fetch('project-content.html')
       .then(response => response.text())
       .then(content => {
-        // Inject the fetched content into the resume-content div
+        // Inject the fetched content into the project-content div
         document.getElementById('project-content').innerHTML = content;
       })
       .catch(error => {
