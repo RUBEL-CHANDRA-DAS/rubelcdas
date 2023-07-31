@@ -3,8 +3,12 @@
     <h2><span class="highlight">WIND4D:</span> Development of a high-fidelity massively parallel Computational Fluid Dynamics (CFD) solver from scratch</h2>
     <p>
       <span class="highlight">Description:</span> I developed the WIND4D solver to model and solve any fluid problems. The code is written in C and MPI from scratch, 
-      approximatly has more than 30000 lines of code. It has several features
-      The solver 
+      approximatly has more than 30000 lines of code. A concurrent precursor method (CPM) was implemented in the solver. Finite Volume Method (FVM) was used to discretize 
+      the governing equations. The solver has both Direct Numerical Simulation (DNS) and Large Eddy Simulation (LES) capabilities. There several LES turbulence models (Lagrangian-averaged scale-dependent (LASD), Lagrangian-averaged
+      scale-independent (LASI), Planar-averaged scale-dependent (PASD), Dynamic model of Germano, and Smagorinsky model, and many more) to parametrize the Sub Grid Scale 
+      (SGS) terms. HYPRE multigrid solver to solve the pressure Poisson equation. The code has a Time-Adaptive Wind-Turbine Model with Yaw Implementation. The code also
+      features the shifted periodic boundary conditions (SPBC), two methods were implemented to achieve this. The code ran on 400 cores (that's the user limit, I believe the code
+      can run on thousands of cores) in Center for Advance Computing and Research (CARC) at the University of New Mexico (UNM).
     </p>
   </div>
 
