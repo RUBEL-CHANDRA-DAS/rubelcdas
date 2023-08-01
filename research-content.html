@@ -75,13 +75,15 @@
       <div class="grid-item"><img src="pictures/ADMvsEx5to10R.png" alt="Image 4"></div>
     </div>
     <p>
-      <span class="highlight">Project Description:</span> Simulated a planar laminar boundary layer flow over a flat plate using 5 different grids 8x8, 16x16, 32x32, 64x64, 128x128.
-      All the simulations were performed in Ansys Fluent and my own written 2D code BL for this course project. The statistics were compared against analytical results.
+      <span class="highlight">Project Description:</span> The following results are from a 3x10 wind farm simulation. This is a miniature scale wind farm simulation using actuator
+      disk method (ADM) has been done to validate the solver against EPFL experimental results by Chamorro and Porté-Agel[2010]. The vertical height (Z) and velocity (u) have 
+      been normalized by the wind turbine diameter (D) and velocity at the hub-height of wind turbine (U<sub>H</sub>) respectively.
     </p>
     <p>
-      <span class="highlight">Findings:</span> The order of accuracy gets closer to the formal order of accuracy as the grid resolution goes from coarse to fine. All the velocity profiles
-      are parabolic in shape, which confirms that the location where velocity profiles are plotted is fully developed. We also observe that the finer mesh the 
-      better agreement with analytical results. The validation metric (d) is calculated when the experimental probability is higher than the computation probability.
+      <span class="highlight">Findings:</span> Fig. 1 indicates that the numerical results match closely the experimental results especially in the regions of interest(three horizontal
+      purple lines where the wind turbine lies). Fig. 1 shows the instantaneous flow field inside the wind farm and interactions of wake structures behind the turbines. How the wakes of
+      upstream turbines are affecting the downstream turbines can be easily observed from Fig. 1 and Fig. 2. By minimizing these wake effects, we can further improve wind farm efficiency.
+      And our goal in the future is to study different mechanisms to reduce the aggregated influences of the wakes in the wind farm.
     </p>
   </div>
 
