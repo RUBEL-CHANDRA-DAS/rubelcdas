@@ -99,37 +99,31 @@
       <div class="grid-item"><img src="pictures/pipeC.png" alt="Image 4"></div>
     </div>
     <p>
-      <span class="highlight">Project Description:</span> Simulated a Couette flow with different pressure gradients with Finite Element Method (FEM). Pressure gradient was applied at all nodes,
-      for some cases just at a few nodes. The velocity was kept at U = 0.9 ms<sup>-1</sup>, pressure gradient (dp/dx) varied from -0.001 to 0.0008, dynamic viscosity, μ = 0.00089. I used linear 
-      elements for this code, the grid aspect ratios were 1:1, 3:1.
+      <span class="highlight">Project Description:</span> The Navier-Stokes equations along with heat and mass transfer 
+      equations for this present problem are solved with finite volume method (FVM) with second-order accurate discretized equations
+      in cylindical coordinates. All the values for dimensionalized again with the physical characteristic scale values. 
+      The Reynolds number, Re = 10425.25, Prandtl number, Pr = 0.017 and Schmidt number, Sc = 76.48; Cw = 0.14 and Cb = 0.03.
+      Comparison of mass transfer coefficient for numerical case against empirical cases were perfomed.
     </p>
     <p>
-      <span class="highlight">Findings:</span> The code provided reasonable results. It can be noticed from the above picture that the rightmost side is overlapping (back-flow) the surface
-      of the left side. The back-flow is defined as when the fluid goes backward under positive adverse pressure (when pressure increase in the direction of flow).
+      <span class="highlight">Findings:</span> Thermal boundary layer develops only near the inflow region, then it stays steady 
+      because of low heat transfer (due to low Biot number number) in the radial direction. Concentration boundary layer also has
+      develops near the inlet which has sudden peak at this region because of significant temperature and velocity changes. The 
+      empirical formulas used to calculate the mass transfer coefficients are applicable to turbulent flows, where the present case 
+      it’s laminar, which justifies the differences between the coefficients.
     </p>
   </div>
 
   <!-- Project 6 -->
   <div class="project" style="background-color: #F0FFF0">
-    <h2><span class="highlight">Title:</span>Optimization and Errors Analysis using Support Vector Machines (SMV) and Gaussian Process Networks (GPN) for classification, regression, and uncertainty estimation, Graduate course project.</h2>
-    <!-- Grid collage containing four images -->
-    <div class="grid-container">
-      <div class="grid-item"><img src="pictures/all_classifier.png" alt="Image 1"></div>
-      <div class="grid-item"><img src="pictures/ex3_sig2.png" alt="Image 2"></div>
-      <div class="grid-item"><img src="pictures/Error_vs_C.bmp" alt="Image 3"></div>
-      <div class="grid-item"><img src="pictures/rbf_er_c.png" alt="Image 4"></div>
-    </div>
+    <h2><span class="highlight">Title:</span> Implemetation of wind turbine model in the open-source code Incompact3D</h2>
     <p>
-      <span class="highlight">Project Description:</span> Several experiments have been conducted to learn the behavior of different parameters related to the use of Support Vector Machines (SMV) in practice.
-      Volterra expansion was used to expand the data into higher dimensional Hilbert space. Compared different classifiers (e.g., MMSE, Ridge regression). Finally, we studied the Gaussian Process Networks (GPN) by doing a few experiments. The 
-      results of these experiments were explained with respect to theory. We optimized parameters for better estimation of the prediction.
+      <span class="highlight">Project Description:</span> I implemented an wind turbine model in the open-source code Incompact3D that has been
+      developed by several authors.
     </p>
     <p>
-      <span class="highlight">Findings:</span> To get better performance from the SVMs, we have to use optimal values of different parameters (e.g, complexity, data points, Gaussian distribution parameter).
-      We can’t use the very higher or lower  value of complexity as it leads to overfitting or underfitting of the model respectively. The kernel representation of the Ridge regression solution classifies the data
-      more accurately than the others as the Ridge regression solution includes the option of adding γI to the kernel matrix K. The kernel representation of the MMSE solution classifies the data poorly as the MMSE solution 
-      has the zero value for gamma. Polynomial kernel produces less error, linear kernel produces more error and Gaussian is in the middle ground. when the data set is small and the number of hyperparameters is
-      high, the optimization procedure becomes unpractical. Therefore, we must explore other selection criteria that have their roots in a probabilistic perspective. Although we can optimize the noise parameter,
-      a good estimation can be achieved only if the noise parameter is known.
+      <span class="highlight">Findings:</span> The incompact3D code was written in Fortran programming language with 2D pencil decomposition framework
+      using MPI. Working on this project, demonstrate my ability to modify and add new models in huge code that multiple authors developed. Eventually
+      I dropped this project when I started to work on my own code development.
     </p>
   </div>
