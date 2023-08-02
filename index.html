@@ -127,7 +127,7 @@
       
       <div id="blog" class="blurb blog-section" style="display: none;">
         <!-- Add an iframe to load the blog-content.html file -->
-        Loading...
+        <div id="blog-content"></div>
       </div>
     </div>
   </header>
@@ -192,6 +192,17 @@
       .then(content => {
         // Inject the fetched content into the coursework-content div
         document.getElementById('coursework-content').innerHTML = content;
+      })
+      .catch(error => {
+        console.error('Error fetching content:', error);
+      });
+    
+    // Fetch the content from blog-content.html using Fetch API
+    fetch('blog-content.html')
+      .then(response => response.text())
+      .then(content => {
+        // Inject the fetched content into the blog-content div
+        document.getElementById('blog-content').innerHTML = content;
       })
       .catch(error => {
         console.error('Error fetching content:', error);
